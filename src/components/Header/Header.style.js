@@ -9,7 +9,6 @@ export const Column = styled.div`
 `;
 export const HeaderWrapper = styled.header`
   width: 100%;
-  background: #fff;
   min-height: 40px;
 
   .container {
@@ -46,7 +45,7 @@ export const HeroSectionWrapper = styled.section`
       &:first-child {
         button {
           margin-left: 10px;
-          margin-top: 10px;
+          margin-top: 20px;
         }
       }
     }
@@ -63,10 +62,26 @@ export const HeroSectionWrapper = styled.section`
       border-radius: 5px;
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 960px) {
+    height: 100%;
+    .container {
+      flex-direction: column;
+      padding: 0 20px;
+
+      h1 {
+        font-size: 2.5rem;
+        margin-left: 10px;
+      }
+      p {
+        font-size: 0.7rem;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
 `;
 
 export const FocusWrapper = styled.section`
-  background: green;
   width: 100%;
   min-height: 100px;
   .container {
@@ -80,7 +95,9 @@ export const FocusWrapper = styled.section`
 export const ProductWrapper = styled.section`
   width: 100%;
   min-height: 100px;
-  background: #fff;
+  background: whitesmoke;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   .container {
     padding: 50px 0;
     display: flex;
@@ -124,6 +141,10 @@ export const TokenWrapper = styled.div`
     margin-left: 30px;
     margin-right: 30px;
     gap: 50px;
+
+    @media screen and (min-width: 320px) and (max-width: 960px) {
+      flex-direction: column;
+    }
   }
   ${Column} {
     h1 {
@@ -144,6 +165,10 @@ export const TokenWrapper = styled.div`
 
       span:last-child {
         font-weight: 600;
+      }
+      @media screen and (min-width: 320px) and (max-width: 960px) {
+        flex-direction: column;
+        word-wrap: break-word;
       }
     }
   }
@@ -188,6 +213,11 @@ export const TokenInfoDetails = styled.section`
         font-size: 0.9rem;
       }
     }
+    @media screen and (min-width: 320px) and (max-width: 960px) {
+      .tokenomics {
+        flex-direction: column;
+      }
+    }
   }
 `;
 
@@ -201,5 +231,68 @@ export const PhaseWrapper = styled.section`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
+  }
+
+  .phase__container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+    @media screen and (min-width: 320px) and (max-width: 960px) {
+      flex-direction: column;
+    }
+  }
+
+  .phase {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    box-shadow: 0 25px 45px rgb(0 0 0 / 10%);
+    .title {
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+    .desc {
+      font-size: 0.78rem;
+      color: rgba(0, 0, 0, 0.6);
+      margin-top: 5px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 960px) {
+      width: 90% !important;
+    }
+  }
+
+  .phase:nth-child(1) {
+    height: 200px;
+    width: 20%;
+  }
+  .phase:nth-child(2) {
+    height: 250px;
+  }
+  .phase:nth-child(3) {
+    height: 300px;
+  }
+  .phase:nth-child(4) {
+    height: 400px;
+    width: 20%;
+  }
+  .phase:nth-child(5) {
+    height: 300px;
+    width: 20%;
+  }
+  .phase:nth-child(6) {
+    height: 250px;
+  }
+  .phase:nth-child(7) {
+    height: 200px;
   }
 `;

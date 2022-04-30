@@ -5,6 +5,7 @@ import Image from '../Image';
 import Section from '../Section';
 import Presale from '../../images/presale.jpeg';
 import Button from '../Button';
+import WhitePaper from '../../assets/VEFI_WHITEPAPER.pdf';
 const HeroSection = () => {
   return (
     <>
@@ -27,13 +28,20 @@ const HeroSection = () => {
                 be realized through its various products and services. Vefi aims
                 to be the standard for trustless and permissionless technology.
               </Typography>
-              <a
-                href="https://thesphynx.co/launchpad/live/33/32520"
-                target="_blank"
-                rel="noreferrer"
+              <Typography
+                as="p"
+                margin="10px 0 0 10px"
+                lineHeight="1.8rem"
+                fontSize="0.9rem"
               >
+                Our cardinal focus is to build the future of DeFi, NFT and the
+                Web3 ecosphere at large. We have raised subsidiaries like 3Swap
+                DEX and Crypto Times TV which are a revolutionary DEX and a
+                crypto media agent respectively.
+              </Typography>
+              <a href={WhitePaper} target="_blank" rel="noreferrer">
                 <Button
-                  label="Participate in our Pre-sale"
+                  label="Read our whitepaper"
                   bg="transparent"
                   border="1px solid blue"
                   borderRadius="8px"

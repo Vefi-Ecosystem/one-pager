@@ -18,9 +18,7 @@ const Header = () => {
               </a>
             </Column>
             <Column flex="0.8">
-              <div className="right">
-                <a href="http://">Whitepapper</a>
-              </div>
+              <div className="right"></div>
             </Column>
           </div>
         </Section>
