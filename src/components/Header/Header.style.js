@@ -50,7 +50,15 @@ export const HeroSectionWrapper = styled.section`
       }
     }
   }
+  .btn__wrapper {
+    display: flex;
+    align-items: center;
 
+    @media screen and (max-width: 320px) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
   .imageWrapper {
     width: 100%;
     overflow: hidden;

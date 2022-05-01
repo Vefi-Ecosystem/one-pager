@@ -39,19 +39,38 @@ const HeroSection = () => {
                 DEX and Crypto Times TV which are a revolutionary DEX and a
                 crypto media agent respectively.
               </Typography>
-              <a href={WhitePaper} target="_blank" rel="noreferrer">
-                <Button
-                  label="Read our whitepaper"
-                  bg="transparent"
-                  border="1px solid blue"
-                  borderRadius="8px"
-                />
-              </a>
+              <div className="btn__wrapper">
+                <a href={WhitePaper} target="_blank" rel="noreferrer">
+                  <Button
+                    label="Read our whitepaper"
+                    bg="transparent"
+                    border="1px solid blue"
+                    borderRadius="8px"
+                    hoverBg="blue"
+                    hoverColor="#fff"
+                  />
+                </a>
+                <a
+                  href="https://thesphynx.co/swap/32520/0xD6447d2fA919811c41a064bDbdaB1E281F8de9B2"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button
+                    label="BUY Vefi Ecosystem Token"
+                    border="1px solid blue"
+                    borderRadius="8px"
+                    bg="blue"
+                    color="#fff"
+                    hoverBg="transparent"
+                    hoverColor="#000"
+                  />
+                </a>
+              </div>
             </Column>
             <Column flex="0.5">
               <div className="imageWrapper">
                 <a
-                  href="https://thesphynx.co/launchpad/live/33/32520"
+                  href="https://thesphynx.co/swap/32520/0xD6447d2fA919811c41a064bDbdaB1E281F8de9B2"
                   target="_blank"
                   rel="noreferrer"
                 >
